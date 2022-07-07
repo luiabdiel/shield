@@ -14,7 +14,7 @@ UI Clone - SHIELD
 
 ![Design preview from the calculator](./assets/images/shield.png)
 
-<p align="star"><a href="https://luiabdiel.github.io/Landwind/" target="_blank">Click here</a> to view it</p>
+<p align="star"><a href="https://luiabdiel.github.io/shield/" target="_blank">Click here</a> to view it</p>
 
 <hr>
 
