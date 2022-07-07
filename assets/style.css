@@ -137,24 +137,3 @@ nav ul li a:hover {
 /* =============== MENU ===============  */
 
 /* =============== MEDIA QUERY ===============  */
-@media (max-width: 950px) {
-  .nav__bar {
-    display: none;
-  }
-
-  .container {
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-  .container img {
-    width: 100%;
-  }
-
-  .container h1 {
-    font-size: 2.5rem;
-  }
-
-  .container p {
-    font-size: 1;
-  }
-}
