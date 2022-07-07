@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+/* =============== RESET ===============  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --text-color: #03045e;
+  --text-paragraph-color: rgba(3, 4, 94, 0.5);
+
+  --text-color-hover: rgba(3, 4, 94, 0.7);
+
+  --button-color: #03045e;
+
+  --background-color: #f7f8fd;
+}
+/* =============== GERAL ===============  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  /* overflow: hidden; */
+
+  background-color: var(--background-color);
+}
+
+.wrapper {
+  max-width: 75rem;
+  padding-inline: 2rem;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--button-color);
+
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+
+  padding: 0.6875rem 2.1875rem;
+
+  border-radius: 5px;
+
+  display: inline-block;
+  transition: 0.1s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* =============== HEADER ===============  */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 3.5rem;
+}
+
+/* =============== NAVBAR ===============  */
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+nav ul li a {
+  font-weight: 500;
+  color: var(--text-color);
+
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--text-color-hover);
+}
+
+/* =============== CONTAINER ===============  */
+.container {
+  margin-top: 7.5rem;
+
+  height: 28.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.container .col-a {
+  max-width: 36.5625rem;
+  margin-right: 2.5rem;
+}
+
+.container h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+
+  margin-bottom: 2.25rem;
+}
+
+.container p {
+  color: var(--text-paragraph-color);
+
+  margin-bottom: 2.25rem;
+}
+
+.container img {
+  width: 500px;
+}
+
+/* =============== MENU ===============  */
+
+/* =============== MEDIA QUERY ===============  */
+@media (max-width: 950px) {
+  .nav__bar {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container img {
+    width: 100%;
+  }
+
+  .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .container p {
+    font-size: 1;
+  }
+}
