@@ -39,9 +39,7 @@ html {
 
 body {
   width: 100%;
-  height: 100vh;
-
-  overflow: hidden;
+  height: 100%;
 
   background-color: var(--background-color);
 }
@@ -104,10 +102,10 @@ nav ul li a:hover {
 .container {
   margin-top: 7.5rem;
 
-  height: 28.5rem;
-
   display: flex;
   align-items: center;
+
+  padding-bottom: 3.5rem;
 }
 
 .container .col-a {
@@ -134,6 +132,35 @@ nav ul li a:hover {
   width: 500px;
 }
 
-/* =============== MENU ===============  */
+.menu__mobile {
+  display: none;
+  font-size: 1.8rem;
 
-/* =============== MEDIA QUERY ===============  */
+  color: var(--text-color);
+}
+
+@media (max-width: 950px) {
+  header .logo img {
+    width: 8.5rem;
+  }
+
+  .nav__bar {
+    display: none;
+  }
+  .menu__mobile {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container img {
+    padding-inline: 5rem;
+  }
+  .container h1 {
+    font-size: 2.3rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+}
