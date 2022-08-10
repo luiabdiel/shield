@@ -7,7 +7,7 @@
  </div>
 
 <h1 align="star">
-UI Clone - SHIELD
+UI Clone - SHIELD Figma 
 </h1>
 
 <p align="star">Clone for study purposes.</p>
